@@ -343,6 +343,9 @@ header
     display: flex;
     align-items: center;
 }
+p.logo-text {
+    margin:0;
+}
 .logo-text{
     font-size: 40px;
     font-weight: 700;
@@ -366,7 +369,7 @@ header
     justify-content: space-between;
     border: 1px solid var(--border);
     border-radius: 40px;
-    min-width: 800px;
+    min-width: 700px;
 }
 @media screen and (max-width:1200px){
     .nav{
@@ -579,7 +582,7 @@ SOCIALS
     position:fixed;
     display: flex;
     flex-direction: column;
-    top: 200px;
+    top: 150px;
     right:0;
     background: var(--background-darker);
     border:1px solid var(--border);
@@ -665,8 +668,8 @@ main{
     }
 }
 .container-main img{
-    width:100%;
-    height:100%;
+    width:100% !important;
+    height:100% !important;
     object-fit: cover;
 }
 .container-main:hover img{
