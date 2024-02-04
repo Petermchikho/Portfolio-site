@@ -669,7 +669,7 @@ main{
 }
 .container-main img{
     width:100% !important;
-    height:100% !important;
+    min-height:400px!important;
     object-fit: cover;
 }
 .container-main:hover img{
