@@ -662,15 +662,17 @@ main{
     overflow: hidden;
     min-height: 400px;
 }
+
+.container-main img#img{
+    width:100% !important;
+    min-height:400px!important;
+    height:100%;
+    object-fit: cover;
+}
 @media screen and (max-width:1200px){
     .container-main{
         flex-basis: 100%;
     }
-}
-.container-main img#img{
-    width:100% !important;
-    min-height:400px!important;
-    object-fit: cover;
 }
 .container-main:hover img{
         -webkit-animation: zoom 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite both;
