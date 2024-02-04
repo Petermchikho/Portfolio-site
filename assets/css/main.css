@@ -667,7 +667,7 @@ main{
         flex-basis: 100%;
     }
 }
-.container-main img{
+.container-main img#img{
     width:100% !important;
     min-height:400px!important;
     object-fit: cover;
