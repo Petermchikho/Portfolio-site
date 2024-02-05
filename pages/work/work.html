@@ -7,6 +7,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="../../assets/css/about.css">
     <link rel="stylesheet" href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../assets/vendor/glightbox/css/glightbox.min.css">
 </head>
 <body>
     <header 
@@ -28,17 +29,18 @@
             </a>
             <a href="../about/about.html">
                 <p 
-                class="active">
+                >
                 about</p>
             </a>
             <a href="../work/work.html">
-                <p>work</p>
+                <p
+                class="active">work</p>
             </a>
             <a href="../services/services.html">
                 <p>services</p>
             </a>
-            <a href="">
-                <p>blogs</p>
+            <a href="../gallery/gallery.html">
+                <p>gallery</p>
             </a>
             <a href="../contact/contact.html">
                 <p>contact</p>
@@ -89,7 +91,7 @@
                 </div>
             </div>
             <div class="work-container">
-                <div class="work">
+                <a href="../../assets/images/blogs/about.avif"class="work glightbox" >
                     <div class="text-work">
                         <p class="text-larger">
                             Essence
@@ -101,8 +103,8 @@
                     <div class="image-work">
                         <img src="../../assets/images/blogs/about.avif" alt="">
                     </div>
-                </div>
-                <div class="work">
+                </a>
+                <a href="../../assets/images/blogs/about.jpg" class="work glightbox" >
                     <div class="text-work">
                         <p class="text-larger">
                             Essence
@@ -114,8 +116,8 @@
                     <div class="image-work">
                         <img src="../../assets/images/blogs/about.jpg" alt="">
                     </div>
-                </div>
-                <div class="work">
+                </a>
+                <a href="../../assets/images/blogs/about.png" class="work glightbox" >
                     <div class="text-work">
                         <p class="text-larger">
                             Essence
@@ -127,8 +129,8 @@
                     <div class="image-work">
                         <img src="../../assets/images/blogs/about.png" alt="">
                     </div>
-                </div>
-                <div class="work">
+                </a>
+                <a href="../../assets/images/blogs/about.webp" class="work glightbox" >
                     <div class="text-work">
                         <p class="text-larger">
                             Essence
@@ -140,8 +142,8 @@
                     <div class="image-work">
                         <img src="../../assets/images/blogs/about.webp" alt="">
                     </div>
-                </div>
-                <div class="work">
+                </a>
+                <a href="../../assets/images/blogs/about1.jpg" class="work glightbox" >
                     <div class="text-work">
                         <p class="text-larger">
                             Essence
@@ -153,8 +155,8 @@
                     <div class="image-work">
                         <img src="../../assets/images/blogs/about1.jpg" alt="">
                     </div>
-                </div>
-                <div class="work">
+                </a>
+                <a href="../../assets/images/blogs/blog.jpg" class="work glightbox" >
                     <div class="text-work">
                         <p class="text-larger">
                             Essence
@@ -166,7 +168,7 @@
                     <div class="image-work">
                         <img src="../../assets/images/blogs/blog.jpg" alt="">
                     </div>
-                </div>
+                </a>
             </div>
             
             
@@ -181,5 +183,15 @@
     <a href="#" class="back-to-top" id="back-to-top"><i class="bi bi-chevron-up"></i></a>
 
     <script src="../../assets/js/about.js"></script>
+    <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script>
+        /**
+         * Initiate glightbox
+         */
+         const glightbox = GLightbox({
+            selector: '.glightbox',
+        });
+        
+    </script>
 </body>
 </html>

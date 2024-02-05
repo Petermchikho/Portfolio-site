@@ -416,7 +416,7 @@ p.logo-text {
 @media screen and (max-width:922px){
 	.header{
 		min-height: 60px;
-        padding-top:10px ;
+        padding-top:3px ;
         position: fixed;
         top:0;
         left:0;
