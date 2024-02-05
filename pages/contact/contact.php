@@ -89,12 +89,35 @@
                     </p>
                 </div>
             </div>
-            <form method="post" name="emailContact">
+            <?php
+                if(!empty($_POST["send"])) {
+                    $Name = $_POST["Name"];
+                $Email = $_POST["Email"];
+                    $Phone = $_POST["Phone"];
+                    $Message = $_POST["Message"];
+                    $toEmail = "petercharlesmchikho1@gmail.com";
+                
+                    $mailHeaders = "Name: " . $Name .
+                    "\r\n Email: ". $Email  . 
+                    "\r\n Phone: ". $Phone  . 
+                    "\r\n Message: " . $Message . "\r\n";
+
+                    if(mail($toEmail, $Name, $mailHeaders)) {
+                        $message = "Your Message has been sent";
+                    }
+                }
+            ?>
+            <form name="emailContact" method="post">
                 <h5>Say hello!</h5>
                 <input  class="full" type="text" name="Name" id="" placeholder="Name">
                 <input class="full" type="email" name="Email" id="" placeholder="Email">
                 <input  class="full" type="text" name="Phone" id="" placeholder="Phone numer">
                 <textarea name="Message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <?php if (! empty($message)) {?>
+                <div class='success'>
+                    <h6><?php echo $message; ?>	</h6>
+                </div>
+                <?php } ?>
                 <div class="send-btn">
                     <input type="submit" value="send" name="send">
                 </div>
