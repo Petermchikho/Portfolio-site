@@ -1248,6 +1248,10 @@ main{
     border: 1px solid var(--border);
     border-radius: 20px;
   }
+  @media screen and (max-width:500px){
+    form{
+        padding:50px 10px;
+  }}
   form input.full,form textarea{
     width: 100%;
     border: 1px solid var(--border);
