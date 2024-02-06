@@ -60,18 +60,23 @@
     <main>
         <section class="details-main section-padding">
             <div class="socials">
-                <a href="">
+                <a href="https://www.facebook.com/pboy.mchikho.33" target="_blank">
                     <i class="bi bi-facebook">
 
                     </i>
                 </a>
-                <a href="">
+                <a href="https://x.com/PMchikho?t=3kMm18d_08KyrACnC3TJcw&s=35" target="_blank">
                     <i class="bi bi-twitter">
 
                     </i>
                 </a>
-                <a href="">
+                <a href="https://instagram.com/petermchikho?igshid=MzMyNGUyNmU2YQ==" target="_blank">
                     <i class="bi bi-instagram">
+
+                    </i>
+                </a>
+                <a href="https://mw.linkedin.com/in/peter-charles-mchikho-50146b266" target="_blank">
+                    <i class="bi bi-linkedin">
 
                     </i>
                 </a>
@@ -91,7 +96,7 @@
                 </div>
             </div>
             <div class="work-container">
-                <a href="../../assets/images/blogs/about.avif"class="work glightbox" >
+                <div id="branding" class="work " >
                     <div class="text-work">
                         <p class="text-larger">
                             Essence
@@ -101,74 +106,74 @@
                         </p>
                     </div>
                     <div class="image-work">
-                        <img src="../../assets/images/blogs/about.avif" alt="">
+                        <img src="../../assets/images/branding/branding.jpg" alt="">
                     </div>
-                </a>
-                <a href="../../assets/images/blogs/about.jpg" class="work glightbox" >
+                </div>
+                <div id="logo-design"class="work" >
                     <div class="text-work">
                         <p class="text-larger">
-                            Essence
+                            Elixir
                         </p>
                         <p class="blue-color">
-                            Branding
+                            Logo designs
                         </p>
                     </div>
                     <div class="image-work">
-                        <img src="../../assets/images/blogs/about.jpg" alt="">
+                        <img src="../../assets/images/logos/logo4.jpg" alt="">
                     </div>
-                </a>
-                <a href="../../assets/images/blogs/about.png" class="work glightbox" >
+                </div>
+                <div id="photography" class="work " >
                     <div class="text-work">
                         <p class="text-larger">
-                            Essence
+                            Zenith
                         </p>
                         <p class="blue-color">
-                            Branding
+                            Photography
                         </p>
                     </div>
                     <div class="image-work">
-                        <img src="../../assets/images/blogs/about.png" alt="">
+                        <img src="../../assets/images/photography/photography1.webp" alt="">
                     </div>
-                </a>
-                <a href="../../assets/images/blogs/about.webp" class="work glightbox" >
+                </div>
+                <div id="artwork" class="work " >
                     <div class="text-work">
                         <p class="text-larger">
-                            Essence
+                            Momentum
                         </p>
                         <p class="blue-color">
-                            Branding
+                            Music artworks
                         </p>
                     </div>
                     <div class="image-work">
-                        <img src="../../assets/images/blogs/about.webp" alt="">
+                        <img src="../../assets/images/artworks/artwork.webp" alt="">
                     </div>
-                </a>
-                <a href="../../assets/images/blogs/about1.jpg" class="work glightbox" >
+                </div>
+                <div id="posters" class="work" >
                     <div class="text-work">
                         <p class="text-larger">
-                            Essence
+                            Quasar
                         </p>
                         <p class="blue-color">
-                            Branding
+                            Posters
                         </p>
                     </div>
                     <div class="image-work">
-                        <img src="../../assets/images/blogs/about1.jpg" alt="">
+                        <img src="../../assets/images/poster/poster.webp" alt="">
                     </div>
-                </a>
-                <a href="../../assets/images/blogs/blog.jpg" class="work glightbox" >
+                </div>
+                <div id="3D" class="work" >
                     <div class="text-work">
                         <p class="text-larger">
-                            Essence
+                            Fussion
                         </p>
                         <p class="blue-color">
-                            Branding
+                            3D
                         </p>
                     </div>
                     <div class="image-work">
-                        <img src="../../assets/images/blogs/blog.jpg" alt="">
+                        <img src="../../assets/images/3d/3D.jpg" alt="">
                     </div>
-                </a>
+                </div>
             </div>
             
             
@@ -176,7 +181,7 @@
     </main>
     <footer class="section-padding">
         <p class="text-footer">
-            Peter -Innovate your dream : &copy;2024 powered by <a href="http://nativeback.com" target="_blank" rel="noopener noreferrer"> NativeBack</a>
+           Portfolio -All Rights Reserved <br/> &copy;2024 designed by <a href="http://nativeback.com" target="_blank" rel="noopener noreferrer"> NativeBack</a>
         </p>
 
     </footer>
@@ -191,6 +196,212 @@
          const glightbox = GLightbox({
             selector: '.glightbox',
         });
+        const Branding = GLightbox({
+                
+                elements: [
+                    {
+                        'href': '../../assets/images/branding/branding.jpg',
+                        'type': 'image',
+                        
+                    },
+                    {
+                        'href': '../../assets/images/branding/branding1.jpg',
+                        'type': 'image',
+                        'alt': 'image text alternatives'
+                    },
+                    {
+                        'href': '../../assets/images/branding/branding2.jpg',
+                        'type': 'image',
+                        'alt': 'image text alternatives'
+                    },
+                    {
+                        'href': '../../assets/images/branding/branding3.jpg',
+                        'type': 'image',
+                        'alt': 'image text alternatives'
+                    },
+                    {
+                        'href': '../../assets/images/branding/branding4.jpg',
+                        'type': 'image',
+                        'alt': 'image text alternatives'
+                    }
+                ],
+                autoplayVideos: true,
+            });
+            document.getElementById("branding").addEventListener("click",function(){
+                Branding.open();
+            })
+            const Logo = GLightbox({
+                
+                elements: [
+                    {
+                        'href': '../../assets/images/logos/logo4.jpg',
+                        'type': 'image',
+                        
+                    },
+                    {
+                        'href': '../../assets/images/logos/logo2.png',
+                        'type': 'image',
+                        'alt': 'image text alternatives'
+                    },
+                    {
+                        'href': '../../assets/images/logos/logo2.jpg',
+                        'type': 'image',
+                        'alt': 'image text alternatives'
+                    },
+                    {
+                        'href': '../../assets/images/logos/logo1.avif',
+                        'type': 'image',
+                        'alt': 'image text alternatives'
+                    },
+                    
+                ],
+                autoplayVideos: true,
+            });
+            document.getElementById("logo-design").addEventListener("click",function(){
+                Logo.open();
+            })
+            const Photography = GLightbox({
+                
+                elements: [
+                    {
+                        'href': '../../assets/images/photography/photography1.webp',
+                        'type': 'image',
+                        
+                    },
+                    {
+                        'href': '../../assets/images/photography/gallery-1.jpg',
+                        'type': 'image',
+                        'alt': 'image text alternatives'
+                    },
+                    {
+                        'href': '../../assets/images/photography/gallery-2.jpg',
+                        'type': 'image',
+                        'alt': 'image text alternatives'
+                    },
+                    {
+                        'href': '../../assets/images/photography/gallery-3.jpg',
+                        'type': 'image',
+                        'alt': 'image text alternatives'
+                    },
+                    {
+                        'href': '../../assets/images/photography/gallery-4.jpg',
+                        'type': 'image',
+                        'alt': 'image text alternatives'
+                    },
+                    {
+                        'href': '../../assets/images/photography/gallery-5.jpg',
+                        'type': 'image',
+                        'alt': 'image text alternatives'
+                    },
+                    {
+                        'href': '../../assets/images/photography/gallery-6.jpg',
+                        'type': 'image',
+                        'alt': 'image text alternatives'
+                    },
+                    
+                ],
+                autoplayVideos: true,
+            });
+            document.getElementById("photography").addEventListener("click",function(){
+                Photography.open();
+            })
+            const Artwork = GLightbox({
+                
+                elements: [
+                    {
+                        'href': '../../assets/images/artworks/artwork.webp',
+                        'type': 'image',
+                        
+                    },
+                    {
+                        'href': '../../assets/images/artworks/artwork1.png',
+                        'type': 'image',
+                        'alt': 'image text alternatives'
+                    },
+                    {
+                        'href': '../../assets/images/artworks/artwork2.png',
+                        'type': 'image',
+                        'alt': 'image text alternatives'
+                    },
+                    {
+                        'href': '../../assets/images/artworks/artwork3.webp',
+                        'type': 'image',
+                        'alt': 'image text alternatives'
+                    },
+                    {
+                        'href': '../../assets/images/artworks/artwork4.jpg',
+                        'type': 'image',
+                        'alt': 'image text alternatives'
+                    },
+                                        
+                ],
+                autoplayVideos: true,
+            });
+            document.getElementById("artwork").addEventListener("click",function(){
+                Artwork.open();
+            })
+            const Posters = GLightbox({
+                
+                elements: [
+                    {
+                        'href': '../../assets/images/poster/poster.webp',
+                        'type': 'image',
+                        
+                    },
+                    {
+                        'href': '../../assets/images/poster/poster1.webp',
+                        'type': 'image',
+                        'alt': 'image text alternatives'
+                    },
+                    {
+                        'href': '../../assets/images/poster/poster2.jpg',
+                        'type': 'image',
+                        'alt': 'image text alternatives'
+                    },
+                    {
+                        'href': '../../assets/images/poster/poster3.jpg',
+                        'type': 'image',
+                        'alt': 'image text alternatives'
+                    },
+                    
+                                        
+                ],
+                autoplayVideos: true,
+            });
+            document.getElementById("posters").addEventListener("click",function(){
+                Posters.open();
+            })
+            const ThreeD = GLightbox({
+                
+                elements: [
+                    {
+                        'href': '../../assets/images/3d/3D.jpg',
+                        'type': 'image',
+                        
+                    },
+                    {
+                        'href': '../../assets/images/3d/3D4.webp',
+                        'type': 'image',
+                        'alt': 'image text alternatives'
+                    },
+                    {
+                        'href': '../../assets/images/3d/3D2.jpg',
+                        'type': 'image',
+                        'alt': 'image text alternatives'
+                    },
+                    {
+                        'href': '../../assets/images/3d/3D1.webp',
+                        'type': 'image',
+                        'alt': 'image text alternatives'
+                    },
+                    
+                                        
+                ],
+                autoplayVideos: true,
+            });
+            document.getElementById("3D").addEventListener("click",function(){
+                ThreeD.open();
+            })
         
     </script>
 </body>

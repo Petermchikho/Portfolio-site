@@ -59,18 +59,23 @@
     <main>
         <section class="details-main section-padding">
             <div class="socials">
-                <a href="">
+                <a href="https://www.facebook.com/pboy.mchikho.33" target="_blank">
                     <i class="bi bi-facebook">
 
                     </i>
                 </a>
-                <a href="">
+                <a href="https://x.com/PMchikho?t=3kMm18d_08KyrACnC3TJcw&s=35" target="_blank">
                     <i class="bi bi-twitter">
 
                     </i>
                 </a>
-                <a href="">
+                <a href="https://instagram.com/petermchikho?igshid=MzMyNGUyNmU2YQ==" target="_blank">
                     <i class="bi bi-instagram">
+
+                    </i>
+                </a>
+                <a href="https://mw.linkedin.com/in/peter-charles-mchikho-50146b266" target="_blank">
+                    <i class="bi bi-linkedin">
 
                     </i>
                 </a>
@@ -89,6 +94,18 @@
                     </p>
                 </div>
             </div>
+            <div class="phone">
+                <h4>
+                    <i class="bi bi-telephone">
+
+                    </i>
+                </h4>
+                
+                <div class="numbers">
+                    <p>+265 998671706</p>
+                    <p>+265 998671706</p>
+                </div>
+            </div>
             <form action="https://formsubmit.co/petercharlesmchikho1@gmail.com" method="POST">
                 <h5>Say hello!</h5>
                 <input  class="full" type="text" name="Name" id="" placeholder="Name">
@@ -99,21 +116,28 @@
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="box">
                 <div class="send-btn">
-                    <input type="submit" value="send">
+                    <input type="submit" value="send" id="send">
                 </div>
                 
             </form>
-            
+            <div id="preloader" class="hide">
+
+            </div>
         </section>
     </main>
     <footer class="section-padding">
         <p class="text-footer">
-            Peter -Innovate your dream : &copy;2024 powered by <a href="http://nativeback.com" target="_blank" rel="noopener noreferrer"> NativeBack</a>
+           Portfolio -All Rights Reserved <br/> &copy;2024 designed by <a href="http://nativeback.com" target="_blank" rel="noopener noreferrer"> NativeBack</a>
         </p>
 
     </footer>
     <a href="#" class="back-to-top" id="back-to-top"><i class="bi bi-chevron-up"></i></a>
 
     <script src="../../assets/js/about.js"></script>
+    <script>
+        document.getElementById("send").addEventListener("click",function(){
+            document.getElementById("preloader").classList.toggle("hide");
+        })
+    </script>
 </body>
 </html>
